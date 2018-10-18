@@ -30,15 +30,15 @@ Serão analisados 4 pontos para avaliar a aptidão do candidato a vaga
 ```
 teste_sd
     └───files
-         ├───spreadsheets
-         └───outputs
+         ├───outputs
+         └───spreadsheets
 ```
 
 **files**
 
 Pasta para servir como repositório dos arquivos. Nela temos as pastas:
-- spreadsheets -> possuí as bases que disponibilizamos para o teste;
 - outputs -> receberá os arquivos gerados nos itens 1,2 e 3.
+- spreadsheets -> possuí as bases que disponibilizamos para o teste;
 
 ## Sobre o Teste
 
