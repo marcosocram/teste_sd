@@ -45,7 +45,6 @@ Pasta para servir como repositório dos arquivos. Nela temos as pastas:
 Disponibilizamos algumas bases de dados (em formato .csv), para que o candidato possa realizar o seu trabalho de análise dos dados neles contidos e em seguida traçar uma estratégia de modelagem e apresentação. Estas bases estao em teste_sd\files\spreadsheets\
 Nesta pasta temos uma base de dados cadastrais de 10.000 empresas, dados de lat e long, qtd veículos, flags, setores, ramos de atividade, CNAES, etc.
 - O candidato terá que pegar todos os arquivos e importá-los em um banco de dados relacional (de preferência o PostgreSql). O intuito disto é verificar o conhecimento e estratégia do candidato ao escolher como realizar a importação dos arquivos. Este procedimento é requisito obrigatório para o teste (Dica: preferimos código às facilidades fornecidas pelas ferramentas clientes de banco de dados);
-- O candidato terá que pegar todos os arquivos e importá-los, cada um para uma collection no mongoDB, para após isto realizar a extração. Este procedimento não é requisito obrigatório, mas é contado como diferencial (é necessário para a realização do item 4 logo abaixo).
 
 1 - (Obrigatório) Precisamos das seguintes análises em um arquivo EXCEL (quando for o caso, separar em outra aba):
 
@@ -103,14 +102,14 @@ Nesta pasta temos uma base de dados cadastrais de 10.000 empresas, dados de lat 
   
   Os requisitos da API são:
 - Código em Golang;
-- MongoDB
-- Docker (um ou mais containers)
-- Incluir a API no github do candidato, na mesma estrutura dos outros itens
+- MongoDB - O candidato terá que importar os arquivos necessários, cada um para uma collection no mongoDB;
+- Docker (um ou mais containers);
+- Incluir a API no github do candidato, na mesma estrutura dos outros itens.
 
 ## Observações
 	
 - É recomendada a utilização de código SQL para a etapa de ETL;
-- O arquivo CNAE apresenta 3 campos multivalorados, ou seja, possui mais de um valor em uma coluna. Devido a isto, o candidato deverá realizar o tratamento destes campos, fazendo com que estes campos deixem de ser multivalorados.
-
+- O arquivo CNAE apresenta 3 campos multivalorados, ou seja, possui mais de um valor em uma coluna. Devido a isto, o candidato deverá realizar o tratamento destes campos, fazendo com que estes campos deixem de ser multivalorados;
+- Dúvidas podem ser tiradas por e-mail.
 
 ### Aos cadidatos, tenham um ótimo teste :D ### 
